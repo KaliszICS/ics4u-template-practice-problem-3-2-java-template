@@ -1,49 +1,157 @@
+import java.lang.reflect.Method;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.*;
-import java.io.*;
-
 public class PracticeProblemTest {
+@Test
+@DisplayName("")
+void towerOfHanoiTest1() {
+    Class<?> testClass = PracticeProblem.class;
+    try {
+        Class<?>[] cArg = {int.class};
+        Method method = testClass.getDeclaredMethod("towerOfHanoi", cArg);
+  // Enter code here
+    assertEquals(-1, (int)method.invoke(null, 2));
+}
 
-   @Test
-   public void testOutput()
-   {
-     PrintStream originalOut = System.out;
-     ByteArrayOutputStream bos = new ByteArrayOutputStream();
-     System.setOut(new PrintStream(bos));
 
-     // action
-     PracticeProblem.q1();
+    catch (NoSuchMethodException e) {
+        fail("Method does not exist");
+}
+    catch(Exception e) {
+        fail("Something weird happened");
+}
+}
+@Test
+@DisplayName("")
+void towerOfHanoiTest2() {
+    Class<?> testClass = PracticeProblem.class;
+    try {
+        Class<?>[] cArg = {int.class};
+        Method method = testClass.getDeclaredMethod("towerOfHanoi", cArg);
+  // Enter code here
+  assertEquals(-1, (int)method.invoke(null, 0));
+}
 
-     // assertion
-     assertEquals("There once was a man from St. Ives.\n", bos.toString());
 
-     // undo the binding in System
-     System.setOut(originalOut);
-   }
+    catch (NoSuchMethodException e) {
+        fail("Method does not exist");
+}
+    catch(Exception e) {
+        fail("Something weird happened");
+}
+}
+@Test
+@DisplayName("")
+void towerOfHanoiTest3() {
+    Class<?> testClass = PracticeProblem.class;
+    try {
+        Class<?>[] cArg = {int.class};
+        Method method = testClass.getDeclaredMethod("towerOfHanoi", cArg);
+  // Enter code here
+  assertEquals(-1, (int)method.invoke(null, -5));
+}
 
-   @Test
-   public void testInputandOutput()
-   {
-      String data = "Users Input";
-      System.setIn(new ByteArrayInputStream(data.getBytes()));
-      
-      PrintStream originalOut = System.out;
-      ByteArrayOutputStream bos = new ByteArrayOutputStream();
-      System.setOut(new PrintStream(bos));
 
-      // action
-      PracticeProblem.q1();
+    catch (NoSuchMethodException e) {
+        fail("Method does not exist");
+}
+    catch(Exception e) {
+        fail("Something weird happened");
+}
+}
+@Test
+@DisplayName("")
+void towerOfHanoiTest4() {
+    Class<?> testClass = PracticeProblem.class;
+    try {
+        Class<?>[] cArg = {int.class};
+        Method method = testClass.getDeclaredMethod("towerOfHanoi", cArg);
+  // Enter code here
+  assertEquals(-1, (int)method.invoke(null, 1));
+}
 
-      // assertion
-      assertEquals("There once was a man from St. Ives.\n", bos.toString());
 
-      // undo the binding in System
-      System.setOut(originalOut);
-   }
+    catch (NoSuchMethodException e) {
+        fail("Method does not exist");
+}
+    catch(Exception e) {
+        fail("Something weird happened");
+}
+}
+@Test
+@DisplayName("")
+void towerOfHanoiTest5() {
+    Class<?> testClass = PracticeProblem.class;
+    try {
+        Class<?>[] cArg = {int.class};
+        Method method = testClass.getDeclaredMethod("towerOfHanoi", cArg);
+  // Enter code here
+  assertEquals(7, (int)method.invoke(null, 3));
+}
 
-   @Test
-   public void testQ3()
-   {
-     
-   }
+
+    catch (NoSuchMethodException e) {
+        fail("Method does not exist");
+}
+    catch(Exception e) {
+        fail("Something weird happened");
+}
+}
+@Test
+@DisplayName("")
+void towerOfHanoiTest6() {
+    Class<?> testClass = PracticeProblem.class;
+    try {
+        Class<?>[] cArg = {int.class};
+        Method method = testClass.getDeclaredMethod("towerOfHanoi", cArg);
+  // Enter code here
+  assertEquals(63, (int)method.invoke(null, 6));
+}
+
+
+    catch (NoSuchMethodException e) {
+        fail("Method does not exist");
+}
+    catch(Exception e) {
+        fail("Something weird happened");
+}
+}
+@Test
+@DisplayName("")
+void towerOfHanoiTest7() {
+    Class<?> testClass = PracticeProblem.class;
+    try {
+        Class<?>[] cArg = {int.class};
+        Method method = testClass.getDeclaredMethod("towerOfHanoi", cArg);
+  // Enter code here
+  assertEquals(32767, (int)method.invoke(null, 15));
+}
+
+
+    catch (NoSuchMethodException e) {
+        fail("Method does not exist");
+}
+    catch(Exception e) {
+        fail("Something weird happened");
+}
+}
+@Test
+@DisplayName("")
+void towerOfHanoiTest8() {
+    Class<?> testClass = PracticeProblem.class;
+    try {
+        Class<?>[] cArg = {int.class};
+        Method method = testClass.getDeclaredMethod("towerOfHanoi", cArg);
+  // Enter code here
+  assertEquals(1023, (int)method.invoke(null, 10));
+}
+
+
+    catch (NoSuchMethodException e) {
+        fail("Method does not exist");
+}
+    catch(Exception e) {
+        fail("Something weird happened");
+}
+}
 }
